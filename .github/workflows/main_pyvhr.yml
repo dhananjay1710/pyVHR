@@ -20,7 +20,7 @@ jobs:
     - name: Set up Python version
       uses: actions/setup-python@v1
       with:
-        python-version: '3.8'
+        python-version: '3.7'
 
     - name: Create and start virtual environment
       run: |
@@ -28,10 +28,7 @@ jobs:
         source venv/bin/activate
 
     - name: Install dependencies
-      run: 
-        pip install numpy
-        pip install -r requirements.txt
-        pip install numpy
+      run: pip install -r requirements.txt
 
     # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
@@ -62,4 +59,4 @@ jobs:
         with:
           app-name: 'pyvhr'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_40ac0fdc61f44171954aee2eae3f8d88 }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_ef32c48a3e4144b5992be0e93ea44397 }}
