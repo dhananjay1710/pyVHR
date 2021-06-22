@@ -30,7 +30,7 @@ jobs:
     - name: Install dependencies
       run: 
         pip install numpy
-        pip install pybdf==0.2.5
+        pip install pybdf
         pip install -r requirements.txt
         pip install numpy
 
