@@ -42,4 +42,5 @@ tensorflow==2.2.0
 numpy
 tables==3.6.1
 orange3==3.27.1
+numpy
 pybdf
