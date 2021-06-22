@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: 'pyvhr'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_ef32c48a3e4144b5992be0e93ea44397 }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_585a93be878d43e58c1548c10a42dc92 }}
