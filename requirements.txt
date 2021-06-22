@@ -19,7 +19,6 @@ lockfile==0.12.2
 matplotlib==3.2.0
 msgpack==0.6.2
 mtcnn==0.1.0
-numpy==1.20.3
 packaging==20.3
 pandas==1.0.5
 pep517==0.8.2
