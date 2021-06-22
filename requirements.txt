@@ -42,4 +42,3 @@ opencv-python
 tensorflow-cpu
 tables==3.6.1
 orange3==3.27.1
-pybdf
