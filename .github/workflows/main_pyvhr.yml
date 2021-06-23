@@ -27,6 +27,10 @@ jobs:
         python -m venv venv
         source venv/bin/activate
 
+    - name: pre-install numpy
+      run: pip install numpy
+    - name: pre-install pybdf
+      run: pip install pybdf
     - name: Install dependencies
       run: pip install -r requirements.txt
 
