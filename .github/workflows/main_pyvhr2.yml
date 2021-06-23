@@ -30,6 +30,9 @@ jobs:
     - name: Install Numpy beforehand
       run: pip install numpy
     
+    -name: Install pybdf separately
+      run: pip install pybdf
+    
     - name: Install dependencies
       run: pip install -r requirements.txt
     
