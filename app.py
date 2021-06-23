@@ -15,14 +15,14 @@ import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 from pyVHR.signals.video import Video
 from pyVHR.methods.pos import POS
-from pyVHR.methods.chrom import CHROM
-from pyVHR.utils.errors import getErrors, printErrors, displayErrors
-from hrvanalysis import remove_outliers, remove_ectopic_beats, interpolate_nan_values
-from hrvanalysis import get_time_domain_features
-from scipy.signal import find_peaks
-from scipy.fft import fft
-import math
-from pyVHR.methods import spo2_utils 
+#from pyVHR.methods.chrom import CHROM
+#from pyVHR.utils.errors import getErrors, printErrors, displayErrors
+#from hrvanalysis import remove_outliers, remove_ectopic_beats, interpolate_nan_values
+#from hrvanalysis import get_time_domain_features
+#from scipy.signal import find_peaks
+#from scipy.fft import fft
+#import math
+#from pyVHR.methods import spo2_utils 
 import urllib.request
 
 Video.loadCropFaces = Video.saveCropFaces = False
