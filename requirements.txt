@@ -1,3 +1,4 @@
+tensorflow==1.14.0
 numpy==1.16.1
 appdirs==1.4.3
 biosppy==0.6.1
@@ -39,7 +40,6 @@ statsmodels==0.11.1
 urllib3==1.25.8
 webencodings==0.5.1
 opencv-python
-tensorflow-cpu
 tables==3.6.1
 orange3==3.27.1
 pybdf
