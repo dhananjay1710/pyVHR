@@ -29,7 +29,7 @@ jobs:
 
     - name: Install dependencies
       run: | 
-        pip install --uograde pip
+        pip install --upgrade pip
         pip install numpy
         pip install pybdf
         pip install -r requirements.txt
