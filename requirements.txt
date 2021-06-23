@@ -42,3 +42,4 @@ webencodings==0.5.1
 opencv-python
 tables==3.6.1
 orange3==3.27.1
+pybdf
