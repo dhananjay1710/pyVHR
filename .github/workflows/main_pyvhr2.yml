@@ -26,18 +26,9 @@ jobs:
       run: |
         python -m venv venv
         source venv/bin/activate
-        
-    - name: Install Numpy beforehand
-      run: pip install numpy
-    
-    - name: Install pybdf separately
-      run: pip install pybdf
     
     - name: Install dependencies
       run: pip install -r requirements.txt
-    
-    - name: Install Numpy after
-      run: pip install numpy
 
     # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
