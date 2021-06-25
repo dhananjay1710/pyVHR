@@ -29,7 +29,8 @@ jobs:
     
     - name: Install dependencies
       run: pip install -r requirements.txt
-        pip install pybdf
+        pip install numpy==1.20.3
+        pip install pybdf==0.2.5
 
     # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
