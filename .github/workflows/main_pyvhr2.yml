@@ -29,9 +29,6 @@ jobs:
     
     - name: Install numpy
       run: pip install numpy==1.19.3
-    
-    - name: Install numpy
-      run: pip install pybdf==0.2.5
       
     - name: Install dependencies
       run: pip install -r requirements.txt
