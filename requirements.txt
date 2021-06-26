@@ -41,3 +41,5 @@ opencv-python
 tables==3.6.1
 orange3==3.27.1
 tensorflow==2.2.0
+numpy==1.19.3
+pybdf==0.2.5
