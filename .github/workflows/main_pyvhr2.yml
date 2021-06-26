@@ -58,6 +58,7 @@ jobs:
           path: .
 
       - name: 'Deploy to Azure Web App'
+        run: pip install numpy==1.19.3
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'pyvhr2'
