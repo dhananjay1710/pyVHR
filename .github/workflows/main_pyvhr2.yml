@@ -50,15 +50,15 @@ jobs:
       name: 'production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
-    steps:
-      - name: Install numpy again
-        run: pip install numpy==1.19.5
-      
+    steps:      
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
         with:
           name: python-app
           path: .
+
+      - name: Install numpy again
+        run: pip install numpy==1.19.5
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
