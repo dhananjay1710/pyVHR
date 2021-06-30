@@ -26,9 +26,12 @@ jobs:
       run: |
         python -m venv venv
         source venv/bin/activate
-      
+    
+    - name: Install numpy
+      run: pip install numpy==1.19.5
+    
     - name: Install dependencies
-      run: pip install -r requirements_2.txt
+      run: pip install -r requirements.txt
 
     # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
@@ -48,6 +51,9 @@ jobs:
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
+      - name: Install numpy again
+        run: pip install numpy==1.19.5
+      
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
         with:
