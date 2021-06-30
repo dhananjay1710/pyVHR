@@ -26,9 +26,6 @@ jobs:
       run: |
         python -m venv venv
         source venv/bin/activate
-    
-    - name: Install numpy
-      run: pip install numpy==1.19.5
       
     - name: Install dependencies
       run: pip install -r requirements.txt
