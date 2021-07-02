@@ -27,6 +27,12 @@ jobs:
         python -m venv venv
         source venv/bin/activate
     
+    - name: Custom Commands
+      run: |
+        sudo apt update
+        sudo apt-get install build essential manpages-dev unixodbc-dev -y
+        sudo apt-get install g fortran
+    
     - name: Install numpy
       run: pip install numpy==1.19.5
     
