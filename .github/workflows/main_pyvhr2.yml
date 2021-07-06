@@ -49,6 +49,7 @@ jobs:
         name: python-app
         path: |
           .
+          venv/
 
   deploy:
     runs-on: ubuntu-latest
