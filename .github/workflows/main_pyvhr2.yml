@@ -35,9 +35,6 @@ jobs:
         python -m venv venv
         source venv/bin/activate
     
-    - name: Install numpy
-      run: pip install numpy==1.19.5
-    
     - name: Install dependencies
       run: pip install -r requirements.txt
 
@@ -64,9 +61,6 @@ jobs:
         with:
           name: python-app
           path: .
-
-      - name: Install numpy again
-        run: pip install numpy==1.19.5
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
